@@ -1,0 +1,137 @@
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+      <title>Innovator's Hub</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  
+  <body>
+      <section class="contact-header">            
+          <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks"> 
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+  
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="aboutUs.html">About Us</a></li>
+                  <li><a href="innovation.html">Innovation</a></li>
+                  <li><a href="team.html">Our Team</a></li>
+                  <li><a href="events.html">Events</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+  
+          </nav>
+          <h1>Contact Us</h1>
+          <p>
+              You can reach us by Filing the Form below <br> Or you can also directly message us on our Social-media handles
+          </p>
+  
+    </section>
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>0000000000</h5>
+                        <p>XYZ, Innovator's Hub</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>www.innovatorshub<br>@gmail.com</h5>
+                        <p>Mail us your query</p>
+                    </span>
+                </div>
+
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn"> Send Message</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Innovator's Hub</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Why follow us?</h4>
+              <p>lorem ispusm lora lora lora lora lora lora lora lora lora lora lora lora lora lora </p>
+            </div>
+    
+    
+            <div class="footer-col">
+              <h4>Our Social media links</h4>
+              <div class="social-links">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin-square"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+     </footer>
+
+     <script type="text/javascript">
+      function showMenu(e){
+      
+          var navLinks = document.getElementById("navLinks");
+          style = window.getComputedStyle(navLinks),
+          right = style.getPropertyValue("right");
+      
+          if (right== "0px"){
+            navLinks.style.right = "-200px";
+      
+          }else{
+            navLinks.style.right = "0px";
+          }
+      
+      }
+      
+      function hideMenu(e){
+      
+      var navLinks = document.getElementById("navLinks");
+      style = window.getComputedStyle(navLinks),
+      right = style.getPropertyValue("right");
+      
+      if (right== "-200px"){
+        navLinks.style.right = "0px";
+      
+      }else{
+        navLinks.style.right = "-200px";
+      }
+      
+      }
+      </script>
+
+  </body>
+
+  
